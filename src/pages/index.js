@@ -15,8 +15,8 @@ const IndexPage = () => (
     </p>
     <p>
       Check out my{" "}
-      <Link to="https://instagram.com/thequirkyhedgehog">Instagram</Link> and{" "}
-      <Link to="https://www.etsy.com/shop/quirkyhedgehog">Etsy store</Link> too!
+      <a href="https://instagram.com/thequirkyhedgehog">Instagram</a> and{" "}
+      <a href="https://www.etsy.com/shop/quirkyhedgehog">Etsy store</a> too!
     </p>
   </Layout>
 )
