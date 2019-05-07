@@ -1,18 +1,19 @@
 import { Link } from "gatsby"
+import Img from "gatsby-image"
 import PropTypes from "prop-types"
 import React from "react"
 
-const Header = ({ siteTitle }) => (
+const Header = ({ siteTitle, headerImage }) => (
   <header
     style={{
-      background: `rebeccapurple`,
+      background: `#bcd8a7`,
       marginBottom: `1.45rem`,
     }}
   >
     <div
       style={{
         margin: `0 auto`,
-        maxWidth: 960,
+        maxWidth: 300,
         padding: `1.45rem 1.0875rem`,
       }}
     >
@@ -20,11 +21,14 @@ const Header = ({ siteTitle }) => (
         <Link
           to="/"
           style={{
-            color: `white`,
-            textDecoration: `none`,
+            color: `black`,
+            textDecoration: `bold`,
           }}
         >
-          {siteTitle}
+          <Img
+            alt="The Quirky Hedgehog Logo"
+            fluid={headerImage.childImageSharp.fluid}
+          />
         </Link>
       </h1>
     </div>
